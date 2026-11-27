@@ -46,6 +46,17 @@ public class CarController {
     /* Each step, the TimerListener moves all cars in the list and tells the
      * view to update its images. TODO Change this method to your needs.
      */
+
+
+
+
+
+
+
+    //START TASK 3-4 CHANGE PROPOSAL: Collision Checker -----------------------------------------------------
+    // Proposal: We have the class Timelistener and its checker for coillsion method - isOutsidePanel.
+    // We need separate and create a separate class that check the boundary.
+
     private class TimerListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
@@ -105,6 +116,14 @@ public class CarController {
                 || car.getY() > maxY;
     }//CHANGE: we are checking if boundaries were in contact with the car object.return true.
 
+//END OF CHANGE------------------------------------------------------------------------------------------
+
+
+
+
+//START TASK 3-4 CHANGE PROPOSAL: CarController - Simulator--------------------------------------------------
+    // Proposal: Snce all this methods are related to the movement of the car this part should be stay here.
+
     void gas(int amount) {
 
         double gas = ((double) amount) / 100;
@@ -159,4 +178,5 @@ public class CarController {
         }
     }
 }}//change: connecting saab turbo buttons
+
 

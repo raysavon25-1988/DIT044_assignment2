@@ -27,6 +27,7 @@ public class DrawPanel extends JPanel {
         }
     }//CHANGE: changing Saab's picture position too
 
+    // Proposal: DrawPanel has its own independeny outisde DrawPanel
     // Initializes the panel and reads the images
     public DrawPanel(int x, int y) {
         this.setDoubleBuffered(true);
